@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4CT 50th Anniversary AR</title>
+    <!-- Imports Google's Free AR Engine -->
+    <script type="module" src="https://googleapis.com"></script>
+    <style>
+        body { margin: 0; padding: 0; background-color: #121212; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        model-viewer { width: 90vw; height: 85vh; background-color: #1a1a1a; border-radius: 16px; }
+    </style>
+</head>
+<body>
+
+    <!-- The 3D AR Viewer Component -->
+    <model-viewer 
+        src="animated-map.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        autoplay 
+        loop
+        shadow-intensity="1"
+        alt="A 3D animated planar graph showing the four color theorem">
+    </model-viewer>
+
+</body>
+</html>
